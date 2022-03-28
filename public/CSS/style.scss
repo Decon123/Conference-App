@@ -1,0 +1,100 @@
+//abstracts
+@import "abstracts/variables";
+//layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/hero";
+
+body {
+    color: $text-color;
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+
+/* cards / about section */
+#conference-cards {
+    padding: 6% 18%;
+    background-color: $text-color;
+    color: $card-text;
+}
+
+.card {
+    border: none;
+    outline: none;
+    justify-content: space-between;
+    gap: 1.3rem;
+
+    &-header {
+        background-color: $text-color;
+        font-weight: bold;
+        padding: 0;
+        border: none;
+    }
+
+    &-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    &-body {
+        text-align: left;
+        padding: 0;
+    }
+    &-subtitle {
+        font-weight: 300;
+        color: $card-text;
+        margin-bottom: 1.5rem; 
+
+        a {
+            color: #4d5358;
+            font-size: 1.2rem;
+
+            &:hover {
+                color: lighten($color:#4d5358, $amount: 30%);
+            }
+        }
+    }
+    &-text {
+        font-weight: 400;
+        color: $light-grey;
+    }
+}
+
+
+
+
+@media (max-width:1258px) {
+    .conference {
+        grid-template-areas: "title"
+                            "time"
+                            "navbar";
+        grid-template-columns: 1fr;
+        /* justify-items: center; */
+
+        &-title {
+            justify-self: center;
+            padding: 0;
+        }
+        &-time {
+            justify-self: center;
+            padding: 0;
+        }
+    .navbar-items {
+        justify-content: space-between;
+    }
+    }
+}

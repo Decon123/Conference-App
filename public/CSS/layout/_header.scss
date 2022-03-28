@@ -1,0 +1,56 @@
+/* header section */
+.conference {
+    background-color: $bg-color;
+    padding: 0 18%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "title time"
+                        "title navbar";
+    grid-template-columns: 35% 50%;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+        grid-area: title;
+        color: $light-grey;
+        font-weight: 300;
+        letter-spacing: 3px;
+        cursor: pointer;
+        border-top: 4px solid $primary-color;  
+        display: block; 
+        padding: 3rem 0 0;
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    &-time {
+        grid-area: time;
+        justify-self: end;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: $primary-color;
+        padding: 3rem 0 0;
+    }
+}
+.navbar {
+    grid-area: navbar;
+    display: block;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.2rem;
+
+    }
+
+    &-link {
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import "header";
+/* footer section */
+#conference-footer {
+    display: flex;
+    align-items: center;
+    background-color: $bg-color;
+    padding: 3% 18%;
+}
+.copyrights {
+    margin-right:auto;
+    color: $primary-color;
+    margin-bottom: 0;
+}
