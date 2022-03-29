@@ -1,0 +1,34 @@
+body {
+    color: #ccc;
+}
+
+#conference-timeTable {
+    padding: 4% 18%;
+}
+
+.agenda {
+    border-collapse: collapse;
+    color: #bec2c4;
+}
+.agenda a {
+    color: #4a5157;
+}
+.agenda a:hover {
+    color: #bec2c4;
+}
+.agenda a h4,
+.agenda thead th {
+    color: #648880;
+}
+.agenda th {
+    text-align: right;
+}
+.agenda td {
+    border-bottom: 2px solid #ccc;
+}
+.agenda th,td {
+    padding: 15px 24px;
+}
+.agenda tbody tr:nth-of-type(even) > * {
+    vertical-align: top;
+}

@@ -35,6 +35,13 @@ app.get("/speakers",(req,res)=>{
     });
 })
 
+app.get("/schedule",(req,res)=>{
+    res.render("schedule",{
+        heroTopic:"Schedule",
+        heroText:"The conference opens with amazing workshops and continues with two days of incredible talks and keynotes, all of which are facilitated by industry-leading experts."
+    })
+})
+
 app.get("*",(req,res)=>{
     res.render("404",{
         title:"404",
