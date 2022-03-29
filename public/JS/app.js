@@ -22,3 +22,4 @@ const changeTopic = (speakerNames)=>{
     return speakerTopic;
 }
 changeTopic(speakerNameArray);
+

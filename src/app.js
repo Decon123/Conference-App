@@ -22,12 +22,16 @@ app.use(express.static(publicDirectoryPath))
 
 //in this route it is the root folder
 app.get("/",(req,res)=>{
-    res.render("index")
+    res.render("index",{
+        heroTopic:"Dedicated to the Craft of Building Websites",
+        heroText:"Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest tech logies. Join us this August!"
+    })
 })
 
 app.get("/speakers",(req,res)=>{
     res.render("speakers",{
-        name:"speakerNames"
+        heroTopic:"Speakers",
+        heroText:"We’re happy to welcome over twenty speakers to present on the industry’s latest technologies. Prepare for an inspiration extravaganza."
     });
 })
 
